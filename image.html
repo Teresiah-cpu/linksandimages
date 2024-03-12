@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images lesson</title>
+</head>
+<body>
+    <h1>MY PETS</h1>
+    <img src="imagess\cat1.jpg.jpg" alt="a beautiful cat" width="130px" height="140px"> <br>
+    <img src="imagess\cats2.jpg.jpg" alt="a beautiful cat" width="130px" height="140px"> <br>
+    <!--target attribute eg target="blank" is used to open the linmked page in a new browser-->
+    <h2>CLICK MY GITHUB</h2>
+    <a href="https://github.com/Teresiah-cpu" target="_blank" >
+        <img src="imagess\github.png" alt="clickable github image" width="130px" height="140px">
+    </a>
+    <!--responsive images-->
+    <img src="image.jpg" alt="description" style="max-width: 100%;">
+   <!--loading images from external sources-->
+   <img src="https://example.com/image.jpg" alt="external image">
+   <!--lazy loading-->
+   <!--The "loading" attribute set to "lazy" is a feature in HTML that tells the browser to load the image lazily. This means it will only load the image when it's in or near the viewport (visible area) of the web page.-->
+   <img src="cat.jpg" alt="my cat" loading="lazy">
+   <!--image captioning-->
+   <figure>
+    <img src="cat.jpg" alt="my cat">
+    <figcaption>this is the picture of my cat</figcaption>
+    <!---->
+   </figure>
+   <!--Retina and high-dpi displays-->
+   <img src="cat.jpg" alt="A small cat" srcset="image.jpg 1x, image@2x.jpg 2x">
+   <!--links n html-->
+   <a href="https://www.example.com">Visit Example.com</a>
+   <!--email links-->
+   <a href="mailto:terrywambo2018@gmail.com">Send an email</a>
+   <!--external links...also notge that below is an absolute link-->
+   <a href="http://www.example.com" target="_blank" >visit external site</a>
+   <!--internal links...also note this is a relative url-->
+   <a href="/about">Learn more about us</a>
+   <!--_self (default): Opens the link in the same browser tab or window.
+_blank: Opens the link in a new browser tab or window.
+_parent: Opens the link in the parent frame or window.
+_top: Opens the link in the full body of the window, replacing any frames-->
+
+<a href="http://www.com" rel="noopener">Visit example</a>
+<!--rel="noopener" is often used for security reasons when opening links in a new tab-->
+</body>
+</html>
